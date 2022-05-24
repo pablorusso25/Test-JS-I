@@ -237,16 +237,29 @@ function deEuroAdolar(euro) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
+  let area = 0;
+  // calculo el area de un rectangulo
+  area = alto * ancho;
+  return area;
 }
 
 function retornarPerimetro(lado) {
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
+  perimetro = 0;
+  // formula del perimetro de un cuadrado es igual a perimetro * 4
+  perimetro = lado * 4; 
+  return perimetro;
 }
 
 function areaDelTriangulo(base, altura) {
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
+  let area = 0;
+  area = base * altura;
+  // dividimos el resultado por 2
+  area = area / 2;
+  return area;
 }
 
 function esVocal(letra) {
@@ -254,6 +267,24 @@ function esVocal(letra) {
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
+  if ( letra.length !== 1 )
+  {
+    // tiene mas de un caracter
+    return "Dato incorrecto";
+  }
+  else 
+  {
+    if ( letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u" )
+    {
+      // es una vocal 
+      return "Es vocal";
+    }
+    else
+    {
+      // algo se tiene que devolver, se devuelve NULL
+      return null;
+    }
+  }
 }
 
 // --------------------------------
