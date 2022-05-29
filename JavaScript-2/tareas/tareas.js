@@ -279,6 +279,7 @@ function doWhile(numero) {
 
   do {
     i = i + 1;
+    // incremento el numero de 5 en 5
     numero = numero + 5;
   } while (i < 8);
 
